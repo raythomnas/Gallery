@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <meta name="description" content="description"/>
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css"
+     />
+     <script type="text/javascript" src="js/images-array.js" defer></script>
+     <script type="text/javascript" src="js/script.js" defer></script>
+  </head>
+  <body >
+
+  <div id="bioBox">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <p onclick="hideBio()">close</p>
+  </div>
+
+  <div id="contactBox">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+    <input type="submit" value="Submit" onclick="hideContact()">
+
+    <p onclick="hideContact()">close</p>
+
+  </form>
+</div>
+
+    <span id="top"></span>
+
+<a href="#top" id="scrollBtn">to top</a>
+
+<h1 id="mainTitle">Title</h1>
+
+<div class="mainContainer">
+
+  <div class="container sidebar">
+    <a href="#mainTitle" onclick="allGallery()">All</a>
+    <a href="#mainTitle" onclick="lanscapeGallery()">Landscapes</a>
+    <a href="#mainTitle" onclick="portraitGallery()">Portraits</a>
+    <a href="#mainTitle" onclick="architectureGallery()">Architecture</a>
+    <a href="#mainTitle" onclick="productGallery()">Product</a>
+  </div>
+
+  <div id="borderLeft"></div>
+
+      <br>
+
+    <div id="linkBox">
+      <div id="column1">
+  </div>
+  <div id="column2">
+
+  </div>
+
+
+
+    </div>
+
+    <div class="container sidebarRight">
+      <a href="#mainTitle" onclick="showContact()">Contact</a>
+      <a href="#mainTitle" onclick="showBio()">About</a>
+    </div>
+
+    <div id="borderRight"></div>
+
+  </div>
+
+
+
+  </body>
+</html>
